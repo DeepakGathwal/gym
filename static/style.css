@@ -1,0 +1,86 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+
+ nav{
+     background-color: black;
+    padding: 10px;
+    /* opacity: 1.9; */
+  
+}
+ul{
+    display: grid;
+    flex-direction: row;
+    grid-template-columns:auto auto auto auto auto;
+    grid-gap: 4px;
+    margin: 2px;
+    /* border-color: #91abc0; */
+    padding: 10px;
+}
+a:hover{
+    color: rgb(206, 236, 122);
+    background-color: rgb(233, 183, 126);
+}
+li{
+    
+    list-style: none;
+    padding: 3px 54px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    margin: 12px;
+}  
+body::before{
+    content: "";
+    position:absolute;
+    height: 800px;
+    width: 100%;
+    top: 0;
+    left: 0;
+        z-index: -1;
+    opacity: 0.7;   
+     background: url('/static/gym.jpg') no-repeat  center center/cover ;
+}
+.container{
+    margin: 12px auto;
+    min-width: 70%;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+input,textarea{
+    display: grid;
+    flex-direction: column;
+    margin: 12px auto;
+   
+    column-gap: 8px;
+    width: 59%;
+    outline: none;
+    border: 1px solid rgb(94, 91, 91);
+    border-radius: 5px;
+    padding: 12px;
+    grid-template-columns:auto auto auto auto auto;
+}
+.submit:hover{
+    color: rgb(206, 236, 122);
+    background-color: rgb(233, 183, 126);
+}
+.submit{
+    margin: 4px auto;
+    display: block;
+    outline: none;
+    padding: 5px 12px;
+    background: gray;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border:1px solid black ;
+    border-radius: 9px;
+    font-weight: bold;
+}
